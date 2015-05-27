@@ -20,7 +20,11 @@ Notice the main still inits google test. GMock has dependencies on GTest to comp
 
 A listener is installed to have hook points for GMock. GMock executes at teardown of the mocked object and then the listener is notified as part of the life-cycle.
 
-DOWNSIDES
-=========
+DOWN SIDES
+==========
 Structuring of the Catch test is important. Do to how GMock works it needs the mocked object to go out of scope. If it goes out of scope to late/early the output wont be what you expect.
 Also you need to call the SUCCEED() method in GMock or you wont get an assert in the passing case. This is fine if you only care about failures but if you are tracking coverage make sure you have a SUCCEED().
+
+
+Note: I couldn't find a simple way to pull in catch.hpp as part of the build. I wasn't going to upload this but thought I could help others.
+

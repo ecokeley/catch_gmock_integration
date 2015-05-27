@@ -9,7 +9,6 @@ add_executable(myApp
 )
 
 # Specify here the libraries this program depends on
-target_link_libraries(myApp
-)
+target_link_libraries(myApp)
 
 install(TARGETS myApp DESTINATION bin)

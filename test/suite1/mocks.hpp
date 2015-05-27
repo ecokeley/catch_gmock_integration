@@ -16,3 +16,4 @@ namespace cokeley {
 } /* namespace cokeley */
 
 #endif /* TEST_MOCKS_HPP_ */
+

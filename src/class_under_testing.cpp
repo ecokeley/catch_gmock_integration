@@ -11,10 +11,10 @@ namespace cokeley {
     should_be_called();
   }
   void class_under_testing::should_be_called() {
-	  printf("Thanks for coming!\n");
+    printf("Thanks for coming!\n");
   }
   void class_under_testing::wont_be_called() {
-	  printf("What are you doing here!\n");
+    printf("What are you doing here!\n");
   }
 }
 

@@ -13,11 +13,11 @@ SCENARIO("checking proper message life cycle") {
         EXPECT_CALL(mock, should_be_called()).Times(::testing::AtLeast(1));
       }
       THEN("the wont_be_called() will NOT be called") {
-    	EXPECT_CALL(mock, should_be_called()).Times(::testing::AnyNumber());
+        EXPECT_CALL(mock, should_be_called()).Times(::testing::AnyNumber());
         EXPECT_CALL(mock, wont_be_called()).Times(0);
       }
-        mock.initialize();
-        SUCCEED();
+      mock.initialize();
+      SUCCEED();
     }
   }
 }

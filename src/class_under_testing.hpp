@@ -4,8 +4,8 @@
 namespace cokeley {
   class class_under_testing {
     public:
-	  class_under_testing();
-	  virtual ~class_under_testing();
+      class_under_testing();
+      virtual ~class_under_testing();
       void initialize();
     protected:
       virtual void should_be_called();

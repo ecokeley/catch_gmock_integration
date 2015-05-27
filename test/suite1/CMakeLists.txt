@@ -9,3 +9,4 @@ target_link_libraries(faux_test
 )
 
 add_test(NAME faux_test COMMAND faux_test)
+
